@@ -1,12 +1,12 @@
 <table>
     <thead>
         <tr>
-            <th ng-repeat="column in columns">{{column.name}}</th>
+            <th ng-repeat="column in columns">{{column}}</th>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="record in records">
-            <td ng-repeat="column in columns">{{record[column.name]}}</td>
+            <td ng-repeat="column in columns">{{record[column]}}</td>
         </tr>
     </tbody>
 </table>
