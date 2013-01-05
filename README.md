@@ -11,9 +11,8 @@ Install submodules
     git submodule init
     git submodule update
 
-Install angular js (?)
+Run a webserver to serve your files
 
+    python -m SimpleHTTPServer 8001
 
-Run a webserver to serve your files (?)
-
-Browse to demo.html on your web browser
+Browse to localhost:8001/demo.html on your web browser
