@@ -1,3 +1,7 @@
+Try the demo
+
+* [Demo](http://modilabs.github.com/bamboo-angular/demo.html)
+
 Install instructions
 ====================
 
