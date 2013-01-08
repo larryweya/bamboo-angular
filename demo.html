@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="bamboo">
+<head>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Aggregations (<a href="#/" ng-model="has_aggregation">show all data</a>)</h2>
+  <div ng-controller="AggregationsController">
+      <ul>
+          <li ng-repeat="aggregation in aggregations"><a href="#/{{aggregation.id}}">{{aggregation.name}}</a></li>
+      </ul>
+  </div>
+  <h2>Data</h2>
+  <div ng-view></div>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bamboo_js/lib/bamboo_api.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+      var bamboo_dataset_id = "3a18780972da435e8c7e345b34bfcd65";
+  </script>
+</body>
+</html>
